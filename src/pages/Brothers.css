@@ -1,0 +1,103 @@
+:root {
+  --backdrop: hsl(0 0% 100% / 0.05);
+  --radius: 14;
+  --border: 3;
+  --backup-border: rgba(255, 255, 255, 0.1);
+  --size: 200;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.brothers-main {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.brothers-main > div {
+  width: 280px;
+  height: auto;
+  position: relative;
+}
+
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 70%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
+  flex-grow: 1;
+}
+
+.brothers-main .position {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.brothers-main article button {
+  padding: 0;
+  align-self: start;
+  color: #ffffff !important;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+}
+
+/* Brother name - solid white, high contrast */
+.brother-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffffff !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .brothers-main {
+    width: 100%;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+  
+  .brothers-main > div {
+    width: 100%;
+    max-width: 300px;
+  }
+}
