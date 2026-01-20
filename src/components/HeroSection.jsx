@@ -5,11 +5,11 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/hero-main.png')",
+          backgroundImage: "url('/assets/Home page/Hero Section Picture/SEPgroupPhoto.jpeg')",
         }}
       >
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/65"></div>
       </div>
 
       {/* Content */}

@@ -31,9 +31,9 @@ const HoverCard = ({ title, description, image, buttonText }) => {
         className="overflow-hidden bg-transparent"
         containerClassName="absolute inset-0"
       >
-        {/* White Background (Default) with backdrop blur */}
+        {/* Dark Background (Default) with backdrop blur */}
         <div
-          className={`absolute inset-0 bg-white/95 backdrop-blur-sm transition-opacity duration-500 z-0 ${
+          className={`absolute inset-0 bg-black/95 backdrop-blur-sm transition-opacity duration-500 z-0 ${
             isHovered ? 'opacity-0' : 'opacity-100'
           }`}
           style={{ borderRadius: 'calc(1.5rem - 2px)' }}
@@ -46,7 +46,7 @@ const HoverCard = ({ title, description, image, buttonText }) => {
           {/* Title - Always visible, changes color on hover - Bolder and Darker */}
           <h2
             className={`text-4xl md:text-5xl font-black mb-6 transition-colors duration-500 ${
-              isHovered ? 'text-white' : 'text-gray-900'
+              isHovered ? 'text-white' : 'text-white'
             }`}
           >
             {title}
@@ -54,7 +54,7 @@ const HoverCard = ({ title, description, image, buttonText }) => {
 
           {/* Description - Fades out and moves down on hover - Medium weight for better readability */}
           <p
-            className={`text-lg leading-relaxed mb-8 font-semibold text-gray-900 transition-all duration-500 ${
+            className={`text-lg leading-relaxed mb-8 font-semibold text-neutral-200 transition-all duration-500 ${
               isHovered ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
             }`}
           >
@@ -98,7 +98,7 @@ const SplitSection = () => {
   }
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-white">
+    <section className="py-20 px-4 md:px-8 lg:px-16 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <HoverCard {...recruitmentData} />

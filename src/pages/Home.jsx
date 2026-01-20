@@ -1,5 +1,6 @@
 import FloatingNavbar from '../components/FloatingNavbar'
 import HeroSection from '../components/HeroSection'
+import iPadScroll from '../components/iPadScroll'
 import PresidentLetter from '../components/PresidentLetter'
 import AboutSection from '../components/AboutSection'
 import InfiniteCarousel from '../components/InfiniteCarousel'
@@ -10,9 +11,10 @@ import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-black w-full">
       <FloatingNavbar />
       <HeroSection />
+      <iPadScroll />
       <PresidentLetter />
       <AboutSection />
       <InfiniteCarousel />
@@ -20,11 +22,11 @@ const Home = () => {
       <NationalPlacements />
       
       {/* Instagram Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-blue-50 to-blue-100">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 mb-12">
           {/* Header */}
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-primary-navy mb-6">
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
               Follow Us On Instagram
             </h2>
             <a
@@ -43,8 +45,10 @@ const Home = () => {
               <span className="font-semibold text-red-500">@sepindiana</span>
             </a>
           </div>
-          
-          {/* Instagram Feed Marquee */}
+        </div>
+        
+        {/* Instagram Feed Marquee - Full Width */}
+        <div className="w-screen overflow-hidden relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
           <InstagramFeed />
         </div>
       </section>

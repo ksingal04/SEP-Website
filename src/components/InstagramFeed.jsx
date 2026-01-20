@@ -11,7 +11,7 @@ const images = [
 
 export default function InstagramFeed() {
   return (
-    <div className="w-full py-10 overflow-hidden bg-white">
+    <div className="w-full py-10 overflow-hidden bg-transparent">
       {/* CSS Animation Styles */}
       <style>
         {`
@@ -37,7 +37,7 @@ export default function InstagramFeed() {
               key={`set1-${i}`} 
               src={src} 
               alt="Instagram" 
-              className="h-64 w-64 object-cover rounded-2xl shadow-md pointer-events-none"
+              className="h-64 w-64 object-cover rounded-xl shadow-md pointer-events-none"
             />
           ))}
         </div>
@@ -48,7 +48,7 @@ export default function InstagramFeed() {
               key={`set2-${i}`} 
               src={src} 
               alt="Instagram" 
-              className="h-64 w-64 object-cover rounded-2xl shadow-md pointer-events-none"
+              className="h-64 w-64 object-cover rounded-xl shadow-md pointer-events-none"
             />
           ))}
         </div>
@@ -59,7 +59,7 @@ export default function InstagramFeed() {
               key={`set3-${i}`} 
               src={src} 
               alt="Instagram" 
-              className="h-64 w-64 object-cover rounded-2xl shadow-md pointer-events-none"
+              className="h-64 w-64 object-cover rounded-xl shadow-md pointer-events-none"
             />
           ))}
         </div>

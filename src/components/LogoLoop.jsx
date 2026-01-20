@@ -111,8 +111,8 @@ const useAnimationLoop = (trackRef, targetVelocity, seqWidth, seqHeight, isHover
 
       const target = isHovered && hoverSpeed !== undefined ? hoverSpeed : targetVelocity;
 
-      const easingFactor = 1 - Math.exp(-deltaTime / ANIMATION_CONFIG.SMOOTH_TAU);
-      velocityRef.current += (target - velocityRef.current) * easingFactor;
+      // Force linear animation - no easing
+      velocityRef.current = target;
 
       if (seqSize > 0) {
         let nextOffset = offsetRef.current + velocityRef.current * deltaTime;
@@ -289,6 +289,7 @@ export const LogoLoop = memo(
               '[-webkit-user-drag:none] pointer-events-none',
               '[image-rendering:-webkit-optimize-contrast]',
               'motion-reduce:transition-none',
+              'brightness-0 invert bg-transparent',
               scaleOnHover &&
                 'transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/item:scale-120'
             )}
@@ -302,6 +303,7 @@ export const LogoLoop = memo(
             loading="lazy"
             decoding="async"
             draggable={false}
+            style={{ backgroundColor: 'transparent' }}
           />
         );
 
@@ -331,10 +333,12 @@ export const LogoLoop = memo(
             className={cx(
               'flex-none text-[length:var(--logoloop-logoHeight)] leading-[1]',
               isVertical ? 'mb-[var(--logoloop-gap)]' : 'mr-[var(--logoloop-gap)]',
-              scaleOnHover && 'overflow-visible group/item'
+              scaleOnHover && 'overflow-visible group/item',
+              'bg-transparent'
             )}
             key={key}
             role="listitem"
+            style={{ backgroundColor: 'transparent' }}
           >
             {inner}
           </li>
