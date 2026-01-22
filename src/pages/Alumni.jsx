@@ -17,22 +17,80 @@ const Alumni = () => {
           />
           
           <BlurText 
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." 
-            className="text-lg text-gray-300 mb-6 block leading-relaxed" 
+            text="Founded in 2010 at UCLA, Sigma Eta Pi is a co-ed professional fraternity dedicated not to setting a path for you, but to supporting you on whatever path you carve." 
+            className="text-lg text-neutral-200 mb-6 block leading-relaxed" 
             delay={0.2} 
           />
           
           <BlurText 
-            text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." 
-            className="text-lg text-gray-300 mb-6 block leading-relaxed" 
+            text="Our mission is to create environments where university students can exercise their creativity, intellect, and problem-solving skills with the support of a close-knit community. Our members have started ventures in every industry from education to technology. Every one of our members has a demonstrable passion for learning, driving change, and self-improvement, but none of them do it alone." 
+            className="text-lg text-neutral-200 mb-8 block leading-relaxed" 
             delay={0.4} 
           />
           
           <BlurText 
-            text="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem." 
-            className="text-lg text-gray-300 block leading-relaxed" 
+            text="We have 11 chapters across the nation including at 6 top ten undergraduate business schools according to US News." 
+            className="text-lg text-neutral-200 mb-8 block leading-relaxed font-semibold" 
             delay={0.6} 
           />
+          
+          <div className="space-y-4">
+            <BlurText 
+              text="University of California Los Angeles (UCLA) - Alpha Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={0.8} 
+            />
+            <BlurText 
+              text="University of Southern California (USC) - Gamma Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={1.0} 
+            />
+            <BlurText 
+              text="University of California Santa Barbara (UCSB) - Epsilon Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={1.2} 
+            />
+            <BlurText 
+              text="University of Michigan - Zeta Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={1.4} 
+            />
+            <BlurText 
+              text="University of Pennsylvania (UPenn) - Theta Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={1.6} 
+            />
+            <BlurText 
+              text="University of North Carolina Chapel Hill - Iota Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={1.8} 
+            />
+            <BlurText 
+              text="University of California Irvine (UCI) - Kappa Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={2.0} 
+            />
+            <BlurText 
+              text="University of California San Diego - Lambda Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={2.2} 
+            />
+            <BlurText 
+              text="Carnegie Mellon University - Mu Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={2.4} 
+            />
+            <BlurText 
+              text="Ohio State University - Nu Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={2.6} 
+            />
+            <BlurText 
+              text="Cal Poly San Luis Obispo - Xi Chapter" 
+              className="text-lg text-neutral-200 block leading-relaxed" 
+              delay={2.8} 
+            />
+          </div>
         </div>
       </div>
 

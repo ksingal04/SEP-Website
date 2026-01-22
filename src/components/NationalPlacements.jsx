@@ -13,7 +13,7 @@ const NationalPlacements = () => {
   ]
 
   return (
-    <section className="py-16 bg-black">
+    <section className="py-16 pt-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 mb-12">
         <h2 className="text-3xl font-extrabold text-center text-white">
           Where SEP Alumni Work

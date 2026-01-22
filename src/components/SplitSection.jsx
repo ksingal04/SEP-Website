@@ -63,7 +63,7 @@ const HoverCard = ({ title, description, image, buttonText }) => {
         </div>
 
         {/* Button - Always visible, pinned to bottom, style changes on hover */}
-        <div className="mt-auto">
+        <div className="mt-auto pt-6 pb-4">
           <button
             className={`px-8 py-3 rounded-full font-semibold transition-all duration-500 ${
               isHovered
@@ -98,7 +98,7 @@ const SplitSection = () => {
   }
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-black">
+    <section className="py-20 pb-32 px-4 md:px-8 lg:px-16 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <HoverCard {...recruitmentData} />
