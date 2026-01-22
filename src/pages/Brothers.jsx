@@ -8,7 +8,7 @@ const brothers = [
   { name: "Alaina Doran", role: "Co-Director of Media", image: "/assets/BrothersPage/Alaina Doran/Alaina.JPG" },
   { name: "Aman Mishra", role: "General Member", image: "/assets/BrothersPage/Aman/Aman.JPG" },
   { name: "Arjun Premnath", role: "Co-Director of Recruitment", image: "/assets/BrothersPage/Arjun/Arjun.JPG" },
-  { name: "Cate MacKendree", role: "Director of Wellness", image: "/assets/BrothersPage/Cate/Cate.jpg" },
+  { name: "Cate MacKendree", role: "Director of Wellness", image: "/assets/BrothersPage/Cate/Cate.jpeg" },
   { name: "Finnbar O'Halloran", role: "General Member", image: "/assets/BrothersPage/Finn/Finn.jpg" },
   { name: "Harini Vinod", role: "Director of Professional Affairs", image: "/assets/BrothersPage/Harini/DSC07784_Original.JPG" },
   { name: "Ian Ives", role: "Director of Finance", image: "/assets/BrothersPage/Ian/Ian.jpg" },

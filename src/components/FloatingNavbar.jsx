@@ -28,11 +28,11 @@ const FloatingNavbar = () => {
     >
       <div className="bg-black/90 backdrop-blur-md rounded-full px-6 py-3 shadow-lg flex items-center gap-8 border border-white/10">
         {/* Logo */}
-        <a href="/" className="flex items-center">
+        <a href="/" className="flex items-center w-1/2">
           <img
             src="/assets/Home page/Navigation Bar/Logo.jpg"
             alt="Sigma Eta Pi Logo"
-            className="h-10 w-auto object-contain bg-transparent"
+            className="h-16 w-auto object-contain bg-transparent max-w-full"
           />
         </a>
 
